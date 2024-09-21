@@ -1,0 +1,121 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2980b9;
+    --text-color: #ecf0f1;
+    --text-secondary-color: #000f1f;
+    --background-color: #34495e;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--text-color);
+    transition: background-color 0.5s ease;
+}
+
+.botao-menu {
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 6;
+    border-radius: 5px;
+    font-size: 24px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: all 0.2s ease-in-out;
+
+}
+
+.botao-menu:hover {
+    background-color: var(--secondary-color);
+}
+
+.botao-menu.ativo {
+    left: 320px;
+}
+
+.menu-lateral {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: var(--background-color);
+    z-index: 5;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-lateral.ativo {
+    left: 0;
+}
+
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.menu-lateral ul li {
+    padding: 15px 30px;
+}
+
+.menu-lateral ul li:hover {
+    background-color: var(--secondary-color);
+    /* transform: translateX(5px) rotateX(5deg); */
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s cubic-bezier(.05, .83, .4, .13);
+}
+
+.menu-lateral ul li a i {
+    font-size: 24px;
+}
+
+.menu-lateral ul li a i:hover {
+    transform: translateX(5px) rotateX(5deg);
+}
+
+.conteudo {
+    margin-left: 80px;
+    padding: 40px;
+    color: var(--text-secondary-color);
+    background-color: var(--text-color);
+    transition: all 0.5s ease;
+
+}
+
+.conteudo.ativo {
+    left: 480px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 4;
+}
+
+.background.ativo {
+    opacity: 1;
+    visibility: visible;
+    /* backdrop-filter: blur(2px) */
+}
