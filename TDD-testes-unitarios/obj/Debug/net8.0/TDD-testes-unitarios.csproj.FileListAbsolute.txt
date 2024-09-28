@@ -1,4 +1,0 @@
-D:\DIO\DOTNET\Desafio Dio DotNet\TDD-testes-unitarios\obj\Debug\net8.0\TDD-testes-unitarios.GeneratedMSBuildEditorConfig.editorconfig
-D:\DIO\DOTNET\Desafio Dio DotNet\TDD-testes-unitarios\obj\Debug\net8.0\TDD-testes-unitarios.AssemblyInfoInputs.cache
-D:\DIO\DOTNET\Desafio Dio DotNet\TDD-testes-unitarios\obj\Debug\net8.0\TDD-testes-unitarios.AssemblyInfo.cs
-D:\DIO\DOTNET\Desafio Dio DotNet\TDD-testes-unitarios\obj\Debug\net8.0\TDD-testes-unitarios.csproj.CoreCompileInputs.cache
